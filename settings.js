@@ -1,4 +1,4 @@
-const fs = require('fs');
+9const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
@@ -28,7 +28,7 @@ AUTO_READ:  process.env.AUTO_READ  || false  ,
 READ_CMD_ONLY:  process.env.READ_CMD_ONLY  || false  ,
 AUTO_BIO:  process.env.AUTO_BIO  || false  ,       
 ALWAYS_ONLINE:  process.env.ALWAYS_ONLINE  || false  ,
-WORK_TYPE: process.env.WORK_TYPE || 'private' ,
+WORK_TYPE: process.env.WORK_TYPE || 'public' ,
 ANTI_LINK: process.env.ANTI_LINK || false  ,
 ANTI_BOT: process.env.ANTI_BOT || false  ,
 ANTI_CALL: process.env.ANTI_CALL || false  ,
